@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="UPMApp.MainPage">
+
+    <AbsoluteLayout Margin="0,120,0,0">
+
+        <Image Source="logo5"
+               HorizontalOptions="Center"
+               Opacity="0.04"/>
+
+        <StackLayout HorizontalOptions="CenterAndExpand"
+                     Margin="30,-10,30,0">
+
+            <Label Text="Alta"
+                       x:Name="lblHeadboard"
+                       HorizontalTextAlignment="Center"
+                       FontSize="30"
+                       TextColor="#023e83"/>
+
+
+            <StackLayout Margin="0,60,0,0">
+                <Entry  x:Name="ntrFirstName"
+                        HorizontalTextAlignment="Center"
+                        Placeholder="Nombre"
+                        FontFamily="inherit"/>
+
+                <Entry  x:Name="ntrLastName"
+                            HorizontalTextAlignment="Center"
+                            Placeholder="Apellido"/>
+
+                <Entry  x:Name="ntrEmail"
+                            HorizontalTextAlignment="Center"
+                            Placeholder="Email"/>
+            </StackLayout>
+
+
+            <FlexLayout Margin="0,100,0,0"
+                            JustifyContent="SpaceAround">
+
+                <Label x:Name="lblBaja"
+                           Text="Baja"
+                           VerticalTextAlignment="Center"/>
+
+                <Switch OnColor="Green"
+                            x:Name="s"
+                            HorizontalOptions="Center"
+                            Scale="1.6"/>
+
+                <Label x:Name="lblAlta"
+                           Text="    "
+                           TextColor="DeepPink"
+                           VerticalTextAlignment="Center"/>
+
+                <StackLayout>
+                    <Button Text="Confirmar"
+                                HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </FlexLayout>
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>
