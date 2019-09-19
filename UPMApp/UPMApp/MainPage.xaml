@@ -14,7 +14,7 @@
 
         <StackLayout HorizontalOptions="CenterAndExpand"
                      Margin="30,-10,30,0">
-
+<!---->
             <Label Text="Alta"
                        x:Name="lblHeadboard"
                        HorizontalTextAlignment="Center"
